@@ -30,6 +30,9 @@ The <head> element is where we put important `meta-information` about our webpag
 
 HTML validators `https://validator.w3.org/`, or `https://www.freeformatter.com/html-validator.html` ensure your markup is correct and are an excellent learning tool, as they provide feedback on syntax errors you may be making often and aren’t aware of, such as missing closing tags and extra spaces in your HTML.
 
+The <strong> element makes text bold. It also semantically marks text as important; `this affects tools, like screen readers, that users with visual impairments will rely on to use your website`. The em element makes text italic. It also semantically places emphasis on the text, which again may affect things like screen readers. 
+
+It is recommended to indent any child elements by `two spaces`.
 
 
 ## 🏷 CSS foundations
