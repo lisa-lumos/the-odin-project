@@ -34,6 +34,34 @@ The <strong> element makes text bold. It also semantically marks text as importa
 
 It is recommended to indent any child elements by `two spaces`.
 
+You can use anchor tags to link to any kind of resource on the internet, not just other HTML documents. You can link to videos, pdf files, images, and so on, but for the most part, you will be linking to other HTML documents. Links to pages on other websites on the internet are called `absolute links`. Links to other pages within our own website are called `relative links`, such as `<a href="pages/about.html">About</a>`. In many cases, this will work just fine; however, you can still run into unexpected issues with this approach. Prepending ./ before the link will in most cases prevent such issues, such as: `<a href="./pages/about.html">About</a>`
+
+The src attribute in img tag can embed an image using both absolute and relative paths. The alt attribute is used to describe an image. It will be used in place of the image if it cannot be loaded. It is also used with screen readers to describe what the image is to visually impaired users.
+
+File sturcture: avoid using spaces in file/folder names, avoid using digits, avoid using capitalized letters. 
+
+There’s four main image formats in use on the web: JPG (handles large color palettes without exorbitantly increasing file size, do not allow for transparent pixels), GIF (simple animations, limited in color palette, binary transparency, cannot have semi-opaque pixels), PNG(bigger than jpg of same quality, allow opacity, great for icons, tech diagrams, logos) and SVG (vector-based, great for responsive design, use them whenever you can. But, if your images contain a lot of text, can have a big impact on file size). 
+
+When writing code, it’s considered best practice to commit every time you have a meaningful change in the code. This will create a timeline of your progress and show that your finished code didn’t appear out of nowhere.
+
+The seven rules of a great Git commit message: (ref: `https://cbea.ms/git-commit/`)
+1. Separate subject from body with a blank line
+2. Limit the subject line to 50 characters
+3. Capitalize the subject line
+4. Do not end the subject line with a period
+5. Use the imperative mood in the subject line
+6. Wrap the body at 72 characters
+7. Use the body to explain what and why vs. how
+
+Using VSCode as your text editor will allow you to easily make multi-line commit messages, easily see the character length of each line, and will allow you to use VSCode spell check extensions (Code Spell Checker) to make sure your spelling is correct. 
+
+
+
+
+
+
+
+
 
 ## 🏷 CSS foundations
 
