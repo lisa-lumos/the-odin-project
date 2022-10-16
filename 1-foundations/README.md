@@ -55,15 +55,42 @@ The seven rules of a great Git commit message: (ref: `https://cbea.ms/git-commit
 
 Using VSCode as your text editor will allow you to easily make multi-line commit messages, easily see the character length of each line, and will allow you to use VSCode spell check extensions (Code Spell Checker) to make sure your spelling is correct. 
 
-
-
-
-
-
-
-
-
 ## 🏷 CSS foundations
+### Selectors
+Universal Selector - select elements of any type, hence the name “universal”, and the syntax for it is a simple asterisk. In the example below, every element would have the color: purple; style applied to it.
+```css
+* {
+  color: purple;
+}
+```
+
+Type Selectors - select all elements of the given element type, and the syntax is just the name of the element.
+
+Class Selectors - select all elements with the given class, which is just an attribute you place on an HTML element. Syntax: a period immediately followed by the case-sensitive value of the class attribute. Another thing you can do with the class attribute is to add multiple classes to a single element as a space-separated list, such as `class="alert-text severe-alert"`. Since whitespace is used to separate class names like this, you should never use spaces for multi-worded names and should use a hyphen instead.
+
+ID Selectors - Instead of a period, we use a hashtag immediately followed by the case-sensitive value of the ID attribute. The major difference between classes and IDs is that an element can only have one ID. An ID cannot be repeated on a single page.
+
+You could group selectors (comma separated), chain selectors (no separator between chains), combine selectors (space separated, A descendant combinator will only cause elements that match the last selector to be selected if they also have an ancestor that matches the previous selector). 
+
+`font-family` can be a single value or a comma-separated list of values that determine what font an element uses. Each font will fall into one of two categories, either a “font family name” like `"Times New Roman"` (we use quotes due to the whitespace between words) or a “generic family name” like `sans-serif` (generic family names never use quotes). If a browser cannot find or does not support the first font in a list, it will use the next one, then the next one and so on until it finds a supported and valid font. This is why it’s best practice to include a list of values for this property, starting with the font you want to be used most and ending with a generic font family as a fallback, e.g. `font-family: "Times New Roman", sans-serif;`.
+
+It’s best to include `both width and height` for `<img>` elements, even if you don’t plan on adjusting the values from the image file’s original ones. When these values aren’t included, if an image takes longer to load than the rest of the page contents, the image won’t take up any space on the page at first, but will suddenly cause a drastic shift of the other page contents once it does load in. Explicitly stating a height and width prevents this from happening, as space will be “reserved” on the page and will just appear as a blank space until the image loads.
+
+Inheritance refers to certain CSS properties that, when applied to an element, are inherited by that element’s descendants, even if we don’t explicitly write a rule for those descendants. Typography based properties (`color`, `font-size`, `font-family`, etc.) are usually inherited, while most other properties aren’t. The exception to this is when directly targeting an element, as this always beats inheritance. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ## 🏷 Flexbox

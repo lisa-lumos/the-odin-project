@@ -1,0 +1,28 @@
+body {
+  font-family: "Arial", sans-serif;
+  /* background-color: rgb(250, 255, 248); */
+}
+
+img {
+  width: 400px;
+  height: auto;
+}
+
+h1,
+h2 {
+  padding: 2px;
+  /* margin-bottom: 5px;
+  margin-top: 20px; */
+}
+
+h1 {
+  background-color: rgb(249, 227, 199);
+}
+
+h2 {
+  background-color: rgb(220, 239, 239);
+}
+
+.topic {
+  background-color: rgb(249, 177, 177);
+}
