@@ -78,22 +78,17 @@ It’s best to include `both width and height` for `<img>` elements, even if you
 
 Inheritance refers to certain CSS properties that, when applied to an element, are inherited by that element’s descendants, even if we don’t explicitly write a rule for those descendants. Typography based properties (`color`, `font-size`, `font-family`, etc.) are usually inherited, while most other properties aren’t. The exception to this is when directly targeting an element, as this always beats inheritance. 
 
-
-
-
-
-
-
-
-
-
-
-
+The Styles pane in the Chrome Developer Tools allows you to edit styles directly in the browser, so you can see the changes immediately (responds in real-time). It is extremely useful for quickly testing out various attributes and values without needing to reload the page over and over again.
 
 
 
 
 ## 🏷 Flexbox
+
+
+
+
+
 
 
 ## 🏷 JavaScript basics
