@@ -1,5 +1,5 @@
 # Foundations
-(Most things are covered in notes in the "full-stack-peojects" repo, here only includes additional points). 
+(Most things are covered in notes in the "full-stack-projects" repo, here only includes additional points). 
 
 ## 🏷 HTML foundations
 HTML (HyperText Markup Language) defines the structure and content of webpages.
@@ -80,6 +80,30 @@ Inheritance refers to certain CSS properties that, when applied to an element, a
 
 The Styles pane in the Chrome Developer Tools allows you to edit styles directly in the browser, so you can see the changes immediately (responds in real-time). It is extremely useful for quickly testing out various attributes and values without needing to reload the page over and over again.
 
+The CSS box model: `https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model`. Changing the value of the `display` property can change whether the outer display type of a box is block or inline. This changes the way it displays alongside other elements in the layout. 
+
+In the standard box model, if you give a box an inline-size and a block-size (or width and a height) attributes, this defines the inline-size and block-size (width and height in horizontal languages) of the content box. Any padding and border is then added on top of those dimensions to get the total size taken up by the box. 
+
+In the alternative box model, any width is the width of the visible box on the page. The content area width is that width minus the width for the padding and border (see image below). No need to add up the border and padding to get the real size of the box. To turn on the alternative model for an element, set `box-sizing: border-box;`. 
+
+To use the alternative box model for all of your elements (which is a common choice among developers), set the box-sizing property on the <html> element and set all other elements to inherit that value:
+```css
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+```
+
+The margin is an invisible space around your box. It pushes other elements away from the box. Margins can have positive or negative values. Setting a negative margin on one side of your box can cause it to overlap other things on the page. 
+
+Margin collapsing - Depending on whether two elements whose margins touch have positive or negative margins, the results will be different:
+- Two positive margins will combine to become one margin. Its size will be equal to the largest individual margin.
+- Two negative margins will collapse and the smallest (furthest from zero) value will be used.
+- If one margin is negative, its value will be subtracted from the total.
 
 
 
