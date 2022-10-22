@@ -138,7 +138,7 @@ Creating and nesting multiple flex containers and items is the primary way we wi
 
 The flex declaration is actually a shorthand for 3 properties (flex-grow, flex-shrink, flex-basis) that you can set on a flex item. These properties affect how flex items size themselves within their container. 
 
-`flex: 1` = `flex-grow: 1, flex-shrink: 1, flex-basis: 0` = `flex: 1 1 0`. Very often you see the flex shorthand defined with only one value. In that case, that value is applied to flex-grow. So when we put `flex: 1` on our divs, we were actually specifying a shorthand of `flex: 1 1 0`.
+`flex: 1` = `flex-grow: 1, flex-shrink: 1, flex-basis: 0` = `flex: 1 1 0`. 
 
 ### flex-grow
 `flex-grow` expects a single number as its value, and that number is used as the flex-item’s “growth factor”. When we applied `flex: 1` to every div inside our container, we were telling `every div to grow the same amount`. The result of this is that every div ends up the exact same size. If we instead add `flex: 2` to just one of the divs, then `that div would grow to 2x the size of the others`. For example:
@@ -191,21 +191,75 @@ If you shrink your browser window you’ll notice that .two never gets smaller t
 
 In practice you will likely not be using complex values for flex-grow, flex-shrink or flex-basis. `Generally, you’re most likely to use declarations like flex: 1; to make divs grow evenly and flex-shrink: 0 to keep certain divs from shrinking`.
 
+### flex-direction
+flexbox can work either horizontally or vertically, and the way some rules work changes a bit depending on which direction you are working with. The default direction for a flex container is horizontal, or row, but you can change the direction to vertical, or column:
+```css
+.flex-container {
+  flex-direction: column;
+}
+```
 
+In `most` circumstances, `flex-direction: row` puts the main axis horizontal (left-to-right), and `column` puts the main axis vertical (top-to-bottom). These divs will stack vertically: 
+```html
+<div class="flex-container">
+  <div class="one"></div>
+  <div class="two"></div>
+  <div class="three"></div>
+</div>
+```
 
+```css
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
 
+/* this selector selects all divs inside of .flex-container */
+.flex-container div {
+  background: peachpuff;
+  border: 4px solid brown;
+  height: 80px;
+  flex: 1 1 auto;
+}
+```
 
+Note that in this example, `flex-direction: column` would not work as expected if we used the shorthand `flex: 1`, because the flex shorthand expands `flex-basis` to `0`, which means that all flex-grow and flex-shrink would begin their calculations from 0. Empty divs by default have 0 height, so for our flex items to fill up the height of their container, they don’t actually need to have any height at all. `flex: 1 1 auto` tells the flex items to default to their given height. We could also have fixed it by `putting a height on the parent` .flex-container, or by using `flex-grow: 1` instead of the shorthand.
 
+Note that when we changed the `flex-direction to column`, `flex-basis refers to height` instead of width. Block-level elements default to the full width of their parent. Changing things to vertical using `flex-direction: column` adds complexity because block-level elements default to the height of their content, and in this case there is no content (it is a div).
 
+```html
+<div class="container">
+  <div class="item"></div>
+  <div class="item"></div>
+  <div class="item"></div>
+</div
+```
 
+```css
+.container {
+  height: 140px;
+  padding: 16px;
+  background: plum;
+  border: 4px solid indigo;
+  display: flex;
+  justify-content: space-between;
+  /* justify-content: center; */
+  /* gap: 8px; */
+}
 
+.item {
+  width: 60px;
+  height: 60px;
+  border: 4px solid darkslategray;
+  background: skyblue;
+}
+```
+`justify-content` aligns items across the `main axis`. 
 
+To center our box we use the `align-items` property to align our item on the `cross axis`, which in this case is the block axis running `vertically`. We use `justify-content` to align the item on the `main axis`, which in this case is the inline axis running `horizontally`.
 
-
-
-
-
-
+References: 
+`https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox`
 
 
 
