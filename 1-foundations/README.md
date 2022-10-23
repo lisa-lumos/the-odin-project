@@ -261,7 +261,20 @@ To center our box we use the `align-items` property to align our item on the `cr
 References: 
 `https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox`
 
+Summary of commonly used flex properties: 
+```css
+/* container */
+display: flex; /* declaration */
+flex-direction: row /* default */ | column; 
+flex-wrap: nowrap /* default */ | wrap;
+justify-content: flex-start /* default */ | flex-end | center | space-between | space-around;
+align-items: stretch /* default */ | flex-start | flex-end | center | baseline;
 
+/* item */
+flex-grow: 0 /* default */ | 1 | 2 | ...;
+flex-shrink: 1 /* default */ | 0 | 2 | ...;
+flex-basis: auto /* default */ | width value | ...;
+```
 
 ## 🏷 JavaScript basics
 
