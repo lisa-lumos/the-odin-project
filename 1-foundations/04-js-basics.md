@@ -85,6 +85,21 @@ const myStr = 'I\'m round. '; // escape ' with \'
 ```
 
 ## JavaScript Developer Tools
+The Developer Tools are useful for running JavaScript code, editing HTML and CSS styles without having to refresh the page, and viewing performance data.
+
+## Functions
+- Functions can have optional parameters. 
+- Functions can be anonymous, and can be expressed in arrow form
+- Values passed to a function as parameters are copied to its local variables.
+- Variables declared outside of any function are called global variables - they are visible from any function (unless shadowed by locals). It’s a good practice to minimize the use of global variables. Modern code has few or no globals.
+- If a function is called, but an argument is not provided, then the corresponding value becomes undefined. That’s not an error. 
+- It is possible to use return without a value. That causes the function to exit immediately.
+- It is a common practice to start a function with a verbal prefix which vaguely describes the action. There must be an agreement within the team on the meaning of the prefixes.
+- Functions should be short and do exactly one thing. If that thing is big, maybe it’s worth it to split the function into a few smaller functions.
+- A Function Expression is created when the execution reaches it and is usable only from that moment. A Function Declaration can be called earlier than it is defined.
+- As a rule of thumb, when we need to declare a function, the first thing to consider is Function Declaration
+- Arrow functions can be used in the same way as Function Expressions.
+
 
 
 
