@@ -100,13 +100,17 @@ The Developer Tools are useful for running JavaScript code, editing HTML and CSS
 - As a rule of thumb, when we need to declare a function, the first thing to consider is Function Declaration
 - Arrow functions can be used in the same way as Function Expressions.
 
+## Problem Solving
+The best way to improve your problem solving ability is by building experience by making lots and lots of programs. The more practice you have the better you’ll be prepared to solve real world problems.
+
+Many beginners try to solve the big problem in one go. Don’t do this. If the problem is sufficiently complex, you’ll get yourself tied in knots and make life a lot harder for yourself. Decomposing problems into smaller and easier to solve subproblems is a much better approach. Decomposition is the main way to deal with complexity, making problems easier and more approachable to solve and understand.
 
 
+“If you can’t explain something in simple terms, you don’t understand it.” — Richard Feynman
 
+“Just when you think you’ve successfully navigated one obstacle, another emerges. But that’s what keeps life interesting. Life is a process of breaking through these impediments — a series of fortified lines that we must break through. Each time, you’ll learn something. Each time, you’ll develop strength, wisdom, and perspective. Each time, a little more of the competition falls away. Until all that is left is you: the best version of you.” — Ryan Holiday (The Obstacle is the Way)
 
-
-
-
+## Understanding Errors
 
 
 
