@@ -111,6 +111,8 @@ Many beginners try to solve the big problem in one go. Don’t do this. If the p
 “Just when you think you’ve successfully navigated one obstacle, another emerges. But that’s what keeps life interesting. Life is a process of breaking through these impediments — a series of fortified lines that we must break through. Each time, you’ll learn something. Each time, you’ll develop strength, wisdom, and perspective. Each time, a little more of the competition falls away. Until all that is left is you: the best version of you.” — Ryan Holiday (The Obstacle is the Way)
 
 ## Understanding Errors
+... 
+
 
 
 
