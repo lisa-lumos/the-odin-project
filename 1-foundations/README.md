@@ -1,5 +1,5 @@
 # Foundations
-Details see each md file in this folder. 
+Details - see each md file in this folder. 
 ## 1. HTML foundations
 ## 2. CSS foundations
 ## 3. Flexbox
