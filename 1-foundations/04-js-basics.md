@@ -113,8 +113,13 @@ Many beginners try to solve the big problem in one go. Don’t do this. If the p
 ## Understanding Errors
 ... 
 
+## Clean Code
+- use uniform indentation
+- use semicolons
+- manually break lines that are longer than 80 characters
+- names for functions and variables should be descriptive. Always use camelCase. To keep things consistent and easy to read, variables should always begin with a noun or an adjective (that is, a noun phrase) and functions with a verb.
 
-
+You should always write your code as if comments didn't exist. This forces you to write your code in the simplest, plainest, most self-documenting way you can humanly come up with.  If your feel your code is too complex to understand without comments, your code is probably just bad.
 
 
 
