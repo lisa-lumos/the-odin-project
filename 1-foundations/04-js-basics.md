@@ -110,9 +110,6 @@ Many beginners try to solve the big problem in one go. Don’t do this. If the p
 
 “Just when you think you’ve successfully navigated one obstacle, another emerges. But that’s what keeps life interesting. Life is a process of breaking through these impediments — a series of fortified lines that we must break through. Each time, you’ll learn something. Each time, you’ll develop strength, wisdom, and perspective. Each time, a little more of the competition falls away. Until all that is left is you: the best version of you.” — Ryan Holiday (The Obstacle is the Way)
 
-## Understanding Errors
-... 
-
 ## Clean Code
 - use uniform indentation
 - use semicolons
@@ -121,7 +118,8 @@ Many beginners try to solve the big problem in one go. Don’t do this. If the p
 
 You should always write your code as if comments didn't exist. This forces you to write your code in the simplest, plainest, most self-documenting way you can humanly come up with.  If your feel your code is too complex to understand without comments, your code is probably just bad.
 
-
+## TDD
+Test Driven Development (TDD) is a phrase you often hear in the dev world. It refers to the practice of writing automated tests that describe how your code should work before you actually write the code. For example, if you want to write a function that adds a couple of numbers, you would first write a test that uses the function and supplies the expected output. The test will fail before you write your code, and you should be able to know that your code works correctly when the test passes.
 
 
 
