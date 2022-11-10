@@ -126,6 +126,11 @@ Test Driven Development (TDD) is a phrase you often hear in the dev world. It re
 - DOM Methods
 - Events
 
+JS event capture, propagation and bubbling: `https://www.youtube.com/watch?v=F1anRyL37lE`. 
+
+
+
+
 
 
 
