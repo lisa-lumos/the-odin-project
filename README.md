@@ -1,5 +1,5 @@
 # The Odin Project
-My notes following `https://www.theodinproject.com/`. This repo will be updated daily until complete. 
+My notes following `https://www.theodinproject.com/`. This repo will be updated regularly until complete. 
 
 ## 1. Foundations
 Keywords: [placeholder]
