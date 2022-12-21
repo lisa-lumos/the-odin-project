@@ -1,15 +1,15 @@
 # 1. HTML foundations
 (Most things are covered in notes in the "full-stack-projects" repo, here only includes additional points). 
 
-HTML (HyperText Markup Language) defines the structure and content of webpages.
-
 Bookmark the page `https://devdocs.io/` - Massive API documentation collection that even works offline. An essential collection of reference material for everything covered and more.
+
+HTML (HyperText Markup Language) defines the structure and content of webpages. You can think of elements as containers for content. The opening and closing tags tell the browser what content the element contains. The browser can then use that information to determine how it should interpret and format the content.
 
 HTML has a vast list of predefined tags `https://developer.mozilla.org/en-US/docs/Web/HTML/Element` that you can use to create all kinds of different elements. It is important to `use the correct tags for content`. Using the correct tags can have 2 big impacts: `how they are ranked in search engines`; and `how accessible they are to users` who rely on assistive technologies, like screen readers, to use the internet. Using the correct elements for content is called `semantic HTML`. 
 
-We should always name the HTML file that will contain the homepage of our websites index.html. This is because web servers will by default look for an index.html page when users land on our websites - and not having one will cause big problems.
+We should always name the HTML file that will contain the homepage of our websites `index.html`. This is because web servers will by default look for an index.html page when users land on our websites - and not having one will cause big problems.
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
   <head>

@@ -2,7 +2,7 @@
 ## Selectors
 Universal Selector - select elements of any type, hence the name “universal”, and the syntax for it is a simple asterisk. In the example below, every element would have the color: purple; style applied to it.
 ```css
-* {
+* { /* universal selector, apply to every element */
   color: purple;
 }
 ```
