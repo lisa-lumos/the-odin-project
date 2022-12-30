@@ -25,8 +25,11 @@ e quotes). If a browser cannot find or does not support the first font in a list
 
 Cascade determines which rules actually get applied to a HTML element. Specificity, inheritance, rule order. 
 
-Inheritance refers to certain CSS properties that, when applied to an element, are inherited by that element’s descendants, even if we don’t explicitly write a rule for those descendants. Typography based properties (`color`, `font-size`, `font-family`, etc.) are usually inherited, while most other properties aren’t. The exception is when directly targeting an element, because it is more specific. 
+To `calculate specificity`, Start at 0, add 100 for each ID value, add 10 for each class value (or pseudo-class or attribute selector), add 1 for each element selector or pseudo-element. Inline style gets a specificity value of 1000, and is always given the highest priority. But if you use the !important rule, it will even override inline styles. The universal selector (*) has a specificity of 0. 
 
+Inheritance refers to certain CSS properties that, when applied to an element, are inherited by that element’s descendants, even if we don’t explicitly write a rule for those descendants. Typography based properties (`color`, `font-size`, `font-family`, etc.) are usually inherited, while most other properties aren’t. The exception is when directly targeting an element, because it is more specific. Mozilla CSS Properties Reference (`https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Properties_Reference`) can be used to learn if a particular CSS property is inherited or not - look for the Inherited field inside the Formal Definition section.
+
+## Chrome developer tool
 The Styles pane in the Chrome Developer Tools allows you to edit styles directly in the browser, so you can see the changes immediately (responds in real-time). It is extremely useful for quickly testing out various attributes and values without needing to reload the page over and over again.
 
 The CSS box model: `https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model`. Changing the value of the `display` property can change whether the outer display type of a box is block or inline. This changes the way it displays alongside other elements in the layout. 
